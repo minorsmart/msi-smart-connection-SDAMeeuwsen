@@ -7,6 +7,6 @@ body {
       }
       
       .dark-mode {
-        background-color: black;
-        color: white;
+        background-color: rgb(37, 37, 37);
+        color: rgb(230, 230, 230);
       }
