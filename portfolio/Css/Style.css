@@ -1,0 +1,15 @@
+
+body {
+        background-color: #565b8c;
+      }
+            
+h1 {
+        color: navy;
+              text-align: center;
+      }
+            
+p1,p2,p3,p4,p5 {
+        color:white;
+        font-family: monospace;
+        font-size: 18px;
+       }
