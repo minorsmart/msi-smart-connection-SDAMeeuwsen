@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CoViD-19</title>
+    </head>
+
+    <body>
+        <h1>
+            CoViD-19 numbers in the
+            <div id="land"></div>
+        </h1>
+            New confirmed infections:
+            <div id="infectionsN"></div>
+            <br>
+            Total deaths:
+            <div id="deathsT"></div>
+    	    <br>
+            Deaths today:
+            <div id="deathsN"></div>
+            <br>   
+            Datum:
+            <div id="datum"></div>
+    </div>
+
+
+            <script lang="text/javascript">
+                fetch('https://api.covid19api.com/summary')
+                    .then(function(resp) { return resp.json() })
+                    .then(function(data) {
+                    console.log(data);
+                    console.log(data.Countries[120].Country);
+                    console.log(data.Countries[120].TotalDeaths);
+                    document.getElementById("land").innerHTML = (data.Countries[120].Country);
+                    document.getElementById("datum").innerHTML = (data.Countries[120].Date);
+                    document.getElementById("deathsT").innerHTML = (data.Countries[120].TotalDeaths);
+                    document.getElementById("deathsN").innerHTML = (data.Countries[120].NewDeaths);
+                    document.getElementById("infectionsN").innerHTML = (data.Countries[120].NewConfirmed);
+                    })
+                    .catch(function() { 
+                    });
+            </script>
+    </body>
+
+</html>
