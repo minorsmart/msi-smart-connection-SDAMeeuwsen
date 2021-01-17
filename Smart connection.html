@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MSI Portfolio S Meeuwsen</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/industrial_robot.png" rel="icon">
+  <link href="img/industrial_robot.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Lato:400,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/prettyphoto/css/prettyphoto.css" rel="stylesheet">
+  <link href="lib/hover/hoverex-all.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Template Name: Solid
+    Template URL: https://templatemag.com/solid-bootstrap-business-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.html">HOME.</a>
+      </div>
+      <div class="navbar-collapse collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">OVER MIJ</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">MINOR  <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="blog.html">Smart Start</a></li>
+              <li><a href="single-post.html">Smart Business</a></li>
+              <li><a href="Plantproject.html">Smart Technology</a></li>
+              <li><a href="single-project.html">Smart Connection</a></li>
+              <li><a href="blog.html">Smart project</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+
+  <!-- *****************************************************************************************************************
+	 BLUE WRAP
+	 ***************************************************************************************************************** -->
+  <div id="blue">
+    <div class="container">
+      <div class="row">
+        <h3>Plant Project</h3>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /blue -->
+
+  <!-- *****************************************************************************************************************
+	 TITLE & CONTENT
+	 ***************************************************************************************************************** -->
+
+  <div class="container mt">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 centered">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="10000">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/Foto plant systeem.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="img/Foto plant code.png" alt="">
+            </div>
+            <div class="item">
+              <img src="img/waterval web.gif" alt="">
+            </div>
+            <div class="item">
+              <img src="img/Filmpje blynk web.gif" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-10 col-lg-offset-1">
+        <div class="spacing"></div>
+        <h4>Geautomatiseerde plant verzorging</h4>
+        <p>Voor het vak smart technology heb ik een systeem ontwikkeld wat verschillende sensoren heeft om de omstandigheden van een plant waar te nemen. Zo zit er een temperatuursensor, een luchtvochtigheidssensor,
+          een lichtsensor en een bodemvochtsensor op. Verder heeft het systeem een relais welke een klein pompje kan aansturen. Dit alles is verbonden met een klein computertje wat de waardes meet en bekijkt. 
+          Als dan blijkt dat de plant water nodig heeft stuurt de relais het pompje aan en krijgt de plant een kleine, instelbare hoeveelheid water. Boven in deze pagina staan 4 afbeeldingen/filmpjes om te laten zien hoe het werkt en eruit ziet.
+          De eerste afbeelding is het systeem met de verschillende onderdelen aangegeven. De tweede afbeelding is een kort voorbeeld van de code die in de computer zit om het werkend te krijgen, hier kunnen de verschillende drempel waardes ook aangepast worden.
+          In het eerste filmpje, voorbeeld 3, is te zien hoe het pompje water gaat pompen als de bodemvochtsensor uit het water gehaald wordt. Omdat er een kleine vertraging in zit is misschien moeilijk te zien wat er gebeurt.
+          Tot slot is in het tweede filmpje, voorbeeld 4, te zien hoe de bijbehorende app werkt. Het systeem heeft namelijk ook een transmitter die een signaal naar mijn telefoon stuurt. Op de de telefoon kan je vervolgens de verschillende waarders zien,
+          het systeem aan en uit zetten en de pomp aan en uit zetten op commando. </p>
+          <br>
+        <h4>Hoe is het gemaakt?</h4>
+        <p>Om te beginnen heb ik een pakket gekregen van school met daar in de benodigde onderdelen die ook op de eerste afbeelding staan, alles behalve de groene printplaat. Toen ben ik begonnen om op een breadboard, een soort tijdelijke printplaat
+        die nog aangepast kan worden, alle sensoren aan te sluiten. De hersenen van het systeem is een ESP32, de verschillende sensoren zijn met kabeltjes verbonden aan deze computer. Toen alles aangesloten was en werkte, 
+        heb ik in EAGLE, een printplaat teken software, de printplaat getekend. Deze printplaat vervangt het breadboard en de losse kabeltjes en is te zien in de eerste afbeelding.
+        Dit ontwerp heb ik vervolgens opgestuurd naar een fabrikant in China die het heeft geproduceerd en opgestuurd. Eenmaal aangekomen heb ik samen met twee groepsgenoten (Rafke Niemans en Sanne van den Brink) van het TNO project de sensoren en ESP32 op de printplaat gesoldeerd.
+        We hebben het zo gedaan dat de sensoren nog wel verwisseld kunnen worden, vandaar de kabeltjes in afbeelding 1. Tot slot hebben we nog een keer alles samen gebracht en op een plant getest.
+        Na wat kleine probleempjes te hebben opgelost werkte het systeem prima en dat is ook te zien in filmpje 1. Bij vragen over hoe het werkt of advies bij het maken van uw eigen geautomatiseerde product, kan u contact met mij opnemen via mail of het formulier onder het kopje contact rechts boven op deze website.</p>
+        <br>
+        <h4>Mogelijke toepassingen</h4>
+        <p>Dit systeem kan in veel gevallen erg handig zijn. Denk bijvoorbeeld aan toepassing op een kleinschalige kwekerij. Omdat het product vrij simpel en dus goedkoop is, kan het ook voor kleinere kwekerijen rendabel zijn. 
+          verder kan het bij bedrijven als smartty, een van de andere project opdrachten, waar er voor bedrijfspanden en huizen plant muren worden gemaakt om de luchtkwaliteit te verberteren. Een van de probelemen waar ze tegenaan liepen
+          was dat er in grote bedrijfspanden elke week wel iemand rond moet lopen om alle planten water te geven. Het feit dat de plant muren gerold en dus verplaats kunnen worden maakt dit alleen nog maar moeilijker omdat ze dan soms "kwijt" kunnen zijn.
+          Tot slot kan het aan particulieren verkocht worden. Zo is een kennis van mij die op zichzelf woont vaak van huis. Als oplossing voor haar planten heeft een vriendin van haar de sleutel en de taak om soms de planten water te geven. 
+          Dit is natuurlijk erg omslachtig en er kunnen ook mensen zijn die hun huissleutel niet willen afgeven. Voor deze mensen kan dit geautomatiseerde plant systeem ook een oplossing zijn. Als ze van huis zijn en de plant heeft water nodig, dan kan dit systeem die plant een beetje water geven.
+          Daar komt bij dat het beter is voor een plant om elke dag een heel kein beetje water te krijgen dan eens in de week een hoop. Ook daar is dit systeem voor af te stellen. </p>
+          <br>
+          <br>
+      </div>
+
+      
+
+    </div>
+  </div>
+
+  <!-- *****************************************************************************************************************
+	 FOOTER
+	 ***************************************************************************************************************** -->
+     <div id="footerwrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <h4>Over</h4>
+              <div class="hline-w"></div>
+              <p>Dit is mijn portfolio website, gemaakt voor de minor smart industry. Ik heb bij het maken van deze website gebruik gemaakt van een bootstrap.</p>
+            </div>
+            <div class="col-lg-4">
+              <h4>Social Media</h4>
+              <div class="hline-w"></div>
+              <p>
+                <a href="https://minorsmart.github.io/msi-smart-connection-SDAMeeuwsen/"><i class="fa fa-dribbble"></i></a>
+                <a href="https://www.instagram.com/sjoerdmeeuwsen/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/sjoerd-meeuwsen-aa39401b8/"><i class="fa fa-linkedin"></i></a>
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <h4>Locatie</h4>
+              <div class="hline-w"></div>
+              <p>
+                Ruitenberglaan, 29,<br/> 6826 CC, Arnhem,<br/> Netherlands.<br/>
+              </p>
+            </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Copyrights <strong>Sjoerd Meeuwsen</strong>. All Rights Reserved
+      </p>
+      <div class="credits">
+        <!--
+          You are NOT allowed to delete the credit link to TemplateMag with free version.
+          You can delete the credit link only if you bought the pro version.
+          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/solid-bootstrap-business-template/
+          Licensing information: https://templatemag.com/license/
+        -->
+        Created with Solid template by <a href="https://templatemag.com/">TemplateMag</a>
+      </div>
+    </div>
+  </div>
+  <!-- / copyrights -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/prettyphoto/js/prettyphoto.js"></script>
+  <script src="lib/isotope/isotope.min.js"></script>
+  <script src="lib/hover/hoverdir.js"></script>
+  <script src="lib/hover/hoverex.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
