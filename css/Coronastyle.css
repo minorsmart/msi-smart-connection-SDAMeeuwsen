@@ -1,8 +1,8 @@
 body {
     background-image: url("Coronabier.jpg");
     background-repeat: no-repeat;
-    background-size: 1500px 800px;
-    
+    background-size: cover;
+
 }
 
 h1 {
